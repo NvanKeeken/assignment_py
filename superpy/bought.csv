@@ -1,0 +1,5 @@
+id,product_name,buy_date,buy_price,expiration_date,amount
+1,Cherry,2023-05-17,5.00,2023-06-17,10
+2,Coffee,2023-05-17,5.00,2023-06-17,10
+3,Chocolat,2023-05-17,5.00,2023-06-17,10
+4,Milk,2023-05-17,5.00,2023-06-17,10

@@ -1,0 +1,6 @@
+id,bought_id,product_name,amount,sell_date,sell_price
+1,2,Coffee,1,2023-05-25,20.00
+2,2,Coffee,5,2023-05-25,10.00
+3,4,Milk,5,2023-05-25,10.00
+3,4,Milk,5,2023-05-22,10.00
+

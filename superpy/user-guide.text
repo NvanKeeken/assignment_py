@@ -1,0 +1,132 @@
+User_Guide Superpy CLI Application
+
+With this CLI application you can:
+- buy a product
+- sell a product 
+- get a report of the inventory 
+- get a report of the sold products
+- get a report of the bought products
+- calculate the profit 
+- calculate the revenue
+- show profit/revnenue in linechard 
+- advance date that is precieved to be today 
+
+How to buy a product?
+To buy a product use:
+
+  python main.py buy
+
+The options of arguments you are required to use are:
+--name or -n              product name
+--price or -p             price of one bought product 
+--expiration_date or -e   expiration_date of bought product in format YYYY-MM-D
+--amount or -a            amount of products bought with this expiration_date
+
+Example:
+
+python main.py buy -name milk -price 0.99 -expiration_date 2023-06-14 -amount 10
+
+python main.py buy -n milk -p 0.99 -e 2023-06-14 -a 10
+
+How to Sell a product?
+To sell a product use:
+
+  python main.py sell
+
+The options of arguments you are required to use are:
+--name or -n              product name
+--price or -p             price of one sold product 
+--amount or -a            amount of products bought with this expiration_date
+--expiration_date or -e   expiration_date of sold product in format YYYY-MM-D
+
+Example:
+
+python main.py sell -name milk -price 1.50 -expiration_date 2023-06-14 -amount 2
+
+python main.py buy -n milk -p 1.50 -e 2023-06-14 -a 2
+
+How to get a report of the inventory?
+To show inventory:
+
+  python main.py report inventory 
+
+You are required to use only one of these options:
+--now             shows inventory actual date
+--yesterday       shows inventory of yesterday based on the date that is precieved as today by the programm
+--today           shows inventory of date that is precieved as today by the programm
+--date            shows inventory of a spefic date or period of time, date passed need to be in format %Y-%m-%d, %Y-%d or %Y
+--expired         shows expired products in inventory of today
+
+Examples:
+
+python main.py report inventory --now 
+
+python main.py report inventory --yesterday
+
+python main.py report inventory --today
+
+python main.py report inventory --date 2023-05-22
+python main.py report inventory --date 2023-05
+python main.py report inventory --date 2023
+
+python main.py report inventory --expired
+
+How to get a report of the sold products?
+To show sold products:
+
+  python main.py report sold
+
+
+How to get a report of the bought products?
+To show bought products:
+
+  python main.py report bought
+
+How to get a report of revenue?
+To calculate revenue:
+
+  python main.py report revenue  
+
+You are required to use only one of these options:
+--yesterday       calculates revenue of yesterday based on the date that is precieved as today by the programm
+--today           calculates revenue of date that is precieved as today by the programm
+--date            calculates revenue of a spefic date or period of time, date passed need to be in format %Y-%m-%d, %Y-%d or %Y
+
+Examples:
+
+python main.py report revenue --yesterday
+
+python main.py report revenue --today
+
+python main.py report revenue --date 2023-05-22
+python main.py report revenue --date 2023-05
+python main.py report revenue --date 2023
+
+How to get a report of profit?
+To calculate profit:
+
+  python main.py report profit  
+
+You are required to use only one of these options:
+--yesterday       calculates profit of yesterday based on the date that is precieved as today by the programm
+--today           calculates profit of date that is precieved as today by the programm
+--date            calculates profit of a spefic date or period of time, date passed need to be in format %Y-%m-%d, %Y-%d or %Y
+
+Examples:
+
+python main.py report profit --yesterday
+
+python main.py report profit --today
+
+python main.py report profit --date 2023-05-22
+python main.py report profit --date 2023-05
+python main.py report profit --date 2023
+
+How to advance that is precieved as today?
+
+to advance the date:
+
+python main.py --advance_date  [number of days you want to an=dvance by]
+
+Example:
+python main.py --advance_date 2
